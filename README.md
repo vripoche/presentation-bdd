@@ -6,12 +6,12 @@ We first define TDD before BDD to well understand differences and how the BDD ap
 
 # Firstly, what is TDD ?
 
-TDD stand for Test Driven Development
+TDD stands for Test Driven Development
 
 For each unit of code (function, class, module, etc) you must follow this process:
 
 ```
-Add test -> Test fails -> Write implementation -> Run test -> Test succeed
+Add test -> Test fails -> Write implementation -> Run test -> Test succeeds
    ^                                 ^              |            |
    |                                 |______________|            |
    |_____________________________________________________________|
@@ -39,4 +39,15 @@ It is used to group tests by customer needs.
 
 # Finally, how BDD should improve testing process ?
 
-//
+B if for Behavior.
+It is the evolution after ATTD, IT is a new test automation approach, not only an Acceptance focus.
+
+Acceptance -> Feature -> Behaviors
+
+* __Acceptance:__ As such user, I can recover my password
+* __Feature:__ Password recovering by email with page to create new one
+* __Behaviors:__ 
+    * It should send email with password recovery link page inside
+    * It should create new password if token and new passord are correct
+    * It should expire token after 15 minutes
+
