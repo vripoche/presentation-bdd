@@ -1,4 +1,4 @@
-# BDD against Spaghetti code effect
+# BDD against TDD spaghetti code effect
 
 Presentation draft
 
@@ -22,13 +22,16 @@ Add test -> Test fails -> Write implementation -> Run test -> Test succeeds
 * Help you to write reliable code
 * Prevent overkill, you code only that you need
 * Cover 100% of the code without any efforts
+* Each test is independant each others, tests can be isolated.
 
 # What are disavantages of TDD ?
 
 * It is difficult to write tests first if you do not know how to resolve a problem
 * Huge amount of tests can involve loss of sense
 * __A well covered program can have a poor value if it does not follow customer needs (Acceptance)__
-* __Too close to implementation, refactoring or evolutions will cost many tests rewriting__
+* __It is difficult to maintain__:
+    * __Tests should be independant, but in practice dependances exist (it is bad) and it is a hell to untangle them__
+    * __Too close to implementation, refactoring or evolutions will cost many tests rewriting__
 
 # Secondly, what is ATDD and how it can help me ?
 
