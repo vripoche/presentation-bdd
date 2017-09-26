@@ -74,7 +74,7 @@ it('test if 1 is converted to I', () => {
 * Help you to write reliable code
 * Prevent overkill, you code only that you need
 * Cover 100% of the code without any efforts
-* Each test is independant each others, tests can be isolated.
+* Each test is independant each others, tests can be isolated
 
 ## What are disavantages of TDD ?
 
@@ -134,8 +134,8 @@ Acceptance -> Feature -> Behaviors
 ```javascript
 describe('As such writer, I need headlines with roman numerals between 1 and 5', () => {
   it('should headline with I.', () => {
-      romanHeadline('1. The first chapter').should.equal('I. The first chapter');
-      expect(romanHeadline('1. The first chapter')).to.equal('I. The first chapter');
+      romanHeadline('1. The first chapter').should.equal('I. The first chapter')
+      expect(romanHeadline('1. The first chapter')).to.equal('I. The first chapter')
   })
   it('should headline with II', () => {
   })
@@ -153,10 +153,10 @@ describe('As such writer, I need headlines with roman numerals between 1 and 5',
 * __See ATDD__
 * __It is easy to maintain__
   * __Test only behaviors not implementation__
-  * __Do not need to change tests if implementation change__
+  * __Do not need to change assertions if implementation change__
   * __Amount of tests is acceptable_
 
 ## What are disadvantages of BDD ?
 
-* Sometimes it is difficult to guess behavior tests before implementation
+* Sometimes it is difficult to guess behavior tests before implementation, it is possible to begin with TDD assertions
 * Composition dependencies against TDD principle
