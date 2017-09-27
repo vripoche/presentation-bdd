@@ -72,9 +72,9 @@ it('test if 1 is converted to I', () => {
 ## What are advantages of TDD ?
 
 * Help you to write reliable code
-* Prevent overkill, you code only that you need
+* Prevent overkill, you code only what you need
 * Cover 100% of the code without any efforts
-* Each test is independant each others, tests can be isolated
+* Each test is independant from each others, tests can be isolated
 
 ## What are disavantages of TDD ?
 
@@ -95,7 +95,7 @@ It is used to group tests by customer needs.
 ## Example: decimal to roman numerals converter for headlines in a word processor
 
 ```javascript
-describe('As such writer, I need headlines with roman numerals betwween 1 and 5', () => {
+describe('As such theatre writer, I need headlines with roman numerals between 1 and 5', () => {
   it('assert if 1 is converted to I', () => {
   })
   it('assert if 2 is converted to II', () => {
@@ -120,7 +120,7 @@ describe('As such writer, I need headlines with roman numerals betwween 1 and 5'
 B if for Behavior.
 It is the evolution after ATTD, it is a new test automation approach with a new framework, not only an Acceptance focus.
 
-Acceptance -> Feature -> Behaviors
+Need -> Acceptance -> Feature -> Behaviors
 
 * __Acceptance:__ As such user, I can recover my password
 * __Feature:__ Password recovering by email with page to create new one
@@ -132,7 +132,7 @@ Acceptance -> Feature -> Behaviors
 ## Example: decimal to roman numerals converter for headlines in a word processor
 
 ```javascript
-describe('As such writer, I need headlines with roman numerals between 1 and 5', () => {
+describe('As such theatre writer, I need headlines with roman numerals between 1 and 5', () => {
   it('should headline with I.', () => {
       romanHeadline('1. The first chapter').should.equal('I. The first chapter')
       expect(romanHeadline('1. The first chapter')).to.equal('I. The first chapter')
