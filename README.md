@@ -154,9 +154,10 @@ describe('As such writer, I need headlines with roman numerals between 1 and 5',
 * __It is easy to maintain__
   * __Test only behaviors not implementation__
   * __Do not need to change assertions if implementation change__
-  * __Amount of tests is acceptable_
+  * __Amount of tests is acceptable__
 
 ## What are disadvantages of BDD ?
 
-* Sometimes it is difficult to guess behavior tests before implementation, it is possible to begin with TDD assertions
+* Sometimes it is difficult to guess behavior tests before implementation, 
+  it is possible to begin with TDD assertions and delete it after
 * Composition dependencies against TDD principle
