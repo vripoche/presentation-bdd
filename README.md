@@ -158,6 +158,5 @@ describe('As such writer, I need headlines with roman numerals between 1 and 5',
 
 ## What are disadvantages of BDD ?
 
-* Sometimes it is difficult to guess behavior tests before implementation, 
-  it is possible to begin with TDD assertions and delete it after
+* Sometimes it is difficult to guess behavior tests before implementation, it is possible to begin with TDD assertions and delete them after
 * Composition dependencies against TDD principle
