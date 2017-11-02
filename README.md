@@ -11,10 +11,10 @@ TDD stands for Test Driven Development
 For each unit of code (function, class, module, etc) you must follow this process:
 
 ```
-Add test -> Test fails -> Write implementation -> Run test -> Test succeeds
-   ^                                 ^              |            |
-   |                                 |______________|            |
-   |_____________________________________________________________|
+Add test -> Test fails -> Write implementation -> Run test -> Test succeeds -> Refacto
+   ^                                 ^              |                             |
+   |                                 |______________|                             |
+   |______________________________________________________________________________|
 ```
 
 ### Example: decimal to roman numerals converter
@@ -23,7 +23,7 @@ __First try__
 
 ```javascript
 it('test if exists', () => {
-  assert.equal('function', typeof fct)
+  assert.equal('function', typeof decToRom)
 })
 
 -> AssertionError: expected 'function' to equal 'undefined'
@@ -36,7 +36,7 @@ const decToRom = () => {
 }
 
 it('test if exists', () => {
-  assert.equal('function', typeof fct)
+  assert.equal('function', typeof decToRom)
 })
 
 -> OK
