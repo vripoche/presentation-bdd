@@ -76,13 +76,13 @@ it('test if 1 is converted to I', () => {
 * Cover 100% of the code without any efforts
 * Each test is independant from each others, tests can be isolated
 
-## What are disavantages of TDD ?
+## What are disadvantages of TDD ?
 
 * It is difficult to write tests first if you do not know how to resolve a problem
 * Huge amount of tests can involve loss of sense
 * __A well covered program can have a poor value if it does not follow customer needs (Acceptance)__
 * __It is difficult to maintain__:
-    * __Tests should be independant, but in practice dependances exist (it is bad) and it is a hell to untangle them__
+    * __Tests should be independant, but in practice dependences exist (it is bad) and it is a hell to untangle them__
     * __Too close to implementation, refactoring or evolutions will cost many tests rewriting__
 
 # Secondly, what is ATDD and how it can help me ?
@@ -126,7 +126,7 @@ Need -> Acceptance -> Feature -> Behaviors
 * __Feature:__ Password recovering by email with page to create new one
 * __Behaviors:__ 
     * It should send email with password recovery link page inside
-    * It should create new password if token and new passord are correct
+    * It should create new password if token and new password are correct
     * It should expire token after 15 minutes
 
 ## Example: decimal to roman numerals converter for headlines in a word processor
